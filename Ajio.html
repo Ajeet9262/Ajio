@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajio shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: blue;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: green;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: black;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: green;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color:#333;
+        }
+
+        .product {
+            display: inline-block;
+            width: 22%;
+            margin: 10px;
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product h4 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .product p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Basic styling for the search bar */
+        .search-container {
+            text-align:center;
+            margin-top: 50px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Shopping mart</h1>
+        <p>Your one-stop shop for everything you need!</p>
+    </header>
+
+    <nav>
+        <a href="#groceries">Groceries</a>
+        <a href="#clothing">Clothing</a>
+        <a href="#shoes">Shoes</a>
+        <a href="#electronics">Electronics</a>
+        <a href="#movies">Movies</a>
+<div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="searchFunction()">Search</button>
+    </div>
+
+    <script>
+        function searchFunction() {
+            var query = document.getElementById("searchInput").value;
+            alert("You searched for: " + query); // Here, you can replace the alert with actual search logic
+        }
+    </script>
+
+    </nav>
+
+    <div class="container">
+        <section id="groceries">
+            <h2 class="section-title">Groceries</h2>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/YY/EN/MY-8155364/fresh-apple-500x500.jpg" alt="Product 1">
+                <a href="https://www.bigbasket.com/">
+                <h4>Fresh Apples</h4>
+                <p  style="color:blue;">Rs 200 / kg</p>
+                </a>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_oYUhLYNuppGwNnf2bN8NSnu3DQb9YZmVg&s" alt="Product 2">
+                <h4>Organic Carrots</h4>
+                <p  style="color:blue;">Rs 70 / kg</p>
+            </div>
+ <div class="product">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/338951989/MD/YD/QF/195648794/71nmszylbyl-ac-uf1000-1000-ql80-500x500.jpg" alt="Product 2">
+                <h4>Thums up </h4>
+                <p  style="color:blue;">Rs 45 / </p>
+            </div>
+
+            <!-- Add more grocery items here -->
+        </section>
+
+        <section id="clothing">
+            <h2 class="section-title">Clothing</h2>
+            <div class="product">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/847762/01/mod01/fnd/IND/fmt/png/PUMA-Graphic-Men's-Slim-Fit-T-Shirt" alt="T-Shirt">
+                <h4>Men's T-Shirt</h4>
+                <p  style="color:blue;">Rs 1100</p>
+            </div>
+            <div class="product">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/best-jeans-for-women-669ea3fd9a9ef.png?crop=0.505xw:1.00xh;0.373xw,0&resize=640:*" alt="Jeans">
+                <h4>Women's Jeans</h4>
+                <p  style="color:blue;">Rs 800</p>
+            </div>
+            <!-- Add more clothing items here -->
+        </section>
+
+        <section id="shoes">
+            <h2 class="section-title">Shoes</h2>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/XP/CU/MY-9581609/mens-nike-shoe-500x500.jpg" alt="Running Shoes">
+                <h4>Running Shoes</h4>
+                <p  style="color:blue;">Rs 5000</p>
+            </div>
+            <div class="product">
+                <img src="https://sportsjam.in/media/catalog/product/cache/f6d88dd4f51ed5a5b4384f0ded062b0d/n/k/nk724324-200l.jpg" alt="Sleepers">
+                <h4>sleepers</h4>
+                <p  style="color:blue;">Rs 1200</p>
+            </div>
+            <!-- Add more shoe items here -->
+        </section>
+
+        <section id="electronics">
+            <h2 class="section-title">Electronics</h2>
+            <div class="product">
+             <a href="https://www.samsung.com/in/">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/t/0/g/-original-imah4zp7fvqp8wev.jpeg?q=90&crop=false" alt="Smartphone">
+                <h4>Smartphone</h4>
+                <p  style="color:blue;">Rs 32,500</p>
+                </a>
+            </div>
+            <div class="product">
+            <a href="https://www.hp.com/in-en/shop/?intel_sem&gad_source=1&gclid=CjwKCAiAqrG9BhAVEiwAaPu5ztxieuuUfDh7UwK__OxSJfsgHwdTDGToM5FPFYVCSdVPMyxUKKkMnhoCz4kQAvD_BwE&gclsrc=aw.ds">
+                <img src="https://img-prd-pim.poorvika.com/cdn-cgi/image/width=500,height=500,quality=75/product/hp-victus-gaming-amd-ryzen-5-5600h-windows-11-home-laptop-15-fb0108ax-mica-silver-8gb-512gb-right-view-min.png" alt="Laptop">
+                <h4>Laptop</h4>
+                <p  style="color:blue;">Rs 66,500</p>
+                </a>
+            </div>
+            <!-- Add more electronics items here -->
+        </section>
+
+        <section id="movies">
+            <h2 class="section-title">Online Movies</h2>
+            <div class="product">
+                <img src="https://english.cdn.zeenews.com/sites/default/files/2025/02/07/1661298-untitled-design-2025-02-07t160630.466.png">
+                <h4>Emotional Movie</h4>
+                <a href="https://youtu.be/htwtV6qsSVo?si=XV6tXC-5McvATBR2">
+                <p style="color:blue;">Rent for Rs 250</p>
+                </a>
+            </div>
+            <div class="product">
+                <img src="https://img.freepik.com/premium-psd/comedy-template-design_23-2151831125.jpg?semt=ais_hybrid" alt="Movie 2">
+                <h4>Comedy Movie</h4>
+               <a href="https://youtu.be/J7vzDh2A9nk?si=YxtxFkzZKaavoTK3">
+                <p style="color:blue;">Rent for Rs 350</p>
+                </a>
+            </div>
+            <!-- Add more movie items here -->
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AJ Online Shopping. All rights reserved. | <a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+</body>
+
+</html>
